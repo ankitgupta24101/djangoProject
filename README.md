@@ -1,2 +1,5 @@
 # djangoProject
-Python Django Project
+# django
+# python
+# bootstrap
+Basic Python Django Project for Learning Purpose.
