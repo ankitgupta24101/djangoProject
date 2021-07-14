@@ -1,0 +1,15 @@
+from shop.models import Product
+Product.objects.all()
+O/P :- <QuerySet [<Product: Watch>]>
+from django.utils import timezone
+myprod = Product(product_name ="mouse",category="computer",sub_category="devices",price=32,desc="computer parts",pub_date=timezone.now())
+myprod.save()
+Product.objects.all()
+O/P :- <QuerySet [<Product: Watch>, <Product: mouse>]>
+Product.objects.get(product_name="mouse")
+O/P :- <Product: mouse>
+a = Product.objects.get(product_name="mouse")
+a.category
+O/P :- 'computer'
+
+
